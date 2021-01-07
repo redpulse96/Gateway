@@ -1,0 +1,41 @@
+import {
+  approveRegistrationDetails,
+  attachRolesToUser,
+  completeRegistration,
+  confirmPassword,
+  confirmRegistration,
+  fetchTransactionsForVendor,
+  fetchUserDetails,
+  fetchUsersDetails,
+  forgotUserPassword,
+  loginUserDetails,
+  logoutUserDetails,
+  provideCredentials,
+  registerUserDetails,
+  rejectRegistrationDetails,
+  updateUserDetails,
+} from './api';
+import { components } from './components';
+
+export const userDef = {
+  components,
+  basePath: '/azam/users',
+  paths: {
+    '/register': registerUserDetails,
+    '/login': loginUserDetails,
+    '/logout': logoutUserDetails,
+    '/approveRegistration': approveRegistrationDetails,
+    '/rejectRegistration': rejectRegistrationDetails,
+    '/fetchUsers/': fetchUsersDetails,
+    '/fetchTransactions': fetchTransactionsForVendor,
+    '/updateuser': updateUserDetails,
+    '/completeregistration': completeRegistration,
+    '/attachrole': attachRolesToUser,
+    '/fetchuserdetails': fetchUserDetails,
+    '/forgotpassword': forgotUserPassword,
+    '/confirmpassword': confirmPassword,
+    '/updateuserstatus': approveRegistrationDetails,
+    '/confirmregistration': confirmRegistration,
+    '/providecredentials': provideCredentials,
+  },
+};

@@ -1,0 +1,78 @@
+INSERT INTO `users` ( `name`, `email`, `password`, `address`, `mobile_number`, `payment_vendor_id`, `type`, `country_code`, `remarks`, `status`, `created_at`, `updated_at`)
+VALUES
+-- Daniel Pirestani password: 'superadmin123'
+('Daniel Pirestani', 'danielp@azampay.com', '$2b$10$2b.6coEA07kfsg3rlKxbzeFyNp1jzdV2rsE6IYJSd4i7r3TM/hl42', X'74686973206973206120737570657261646D696E', X'37373630323235343035', NULL, NULL, 'TZS', NULL, 'active', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+
+INSERT INTO `users` ( `name`, `email`, `password`, `address`, `mobile_number`, `payment_vendor_id`, `type`, `country_code`, `remarks`, `status`, `created_at`, `updated_at`)
+VALUES
+-- Fortunatus password: 'superadmin123'
+('Fortunatus', 'fortunatus@azampay.com', '$2b$10$2b.6coEA07kfsg3rlKxbzeFyNp1jzdV2rsE6IYJSd4i7r3TM/hl42', X'74686973206973206120737570657261646D696E', X'37373630323235343035', NULL, NULL, 'TZS', NULL, 'active', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO `access_rights` ( `access_right_code`, `type`, `name`, `description`, `status`, `created_at`, `updated_at`)
+VALUES
+(X'5341525F303031', X'7573657273', X'72656164', X'74686973206973206120726F6C65204352454154452D55534552', X'616374697665', '2020-06-29 07:19:41', '2020-07-29 10:39:10'),
+(X'5341525F303032', X'7573657273', X'7772697465', X'74686973206973206120726F6C6520564945572D55534552', X'616374697665', '2020-06-29 07:19:41', '2020-07-29 10:39:13'),
+(X'5341525F303033', X'7573657273', X'64656C657465', X'74686973206973206120726F6C652044454C4554452D55534552', X'616374697665', '2020-06-29 07:19:41', '2020-07-29 10:39:17'),
+(X'5341525F303034', X'7573657273', X'757064617465', X'74686973206973206120726F6C65205550444154452D55534552', X'616374697665', '2020-06-29 07:19:41', '2020-07-29 10:39:20');
+
+INSERT INTO `access_rights` ( `access_right_code`, `type`, `name`, `description`, `status`, `created_at`, `updated_at`)
+VALUES
+	(X'525F41495254454C5F4745545F4D554C5449504C45', X'7472616E73616374696F6E73', X'61697274656C', X'74686973206973206120726F6C652044454C4554452D55534552', X'616374697665', '2020-06-29 07:24:22', '2020-07-29 10:41:15'),
+	(X'525F48414C4F54454C5F4745545F4D554C5449504C45', X'7472616E73616374696F6E73', X'68616C6F74656C', X'74686973206973206120726F6C65205550444154452D55534552', X'616374697665', '2020-06-29 07:24:22', '2020-07-29 10:41:19'),
+	(X'525F5449474F5F4745545F4D554C5449504C45', X'7472616E73616374696F6E73', X'7469676F', X'74686973206973206120726F6C65204352454154452D55534552', X'616374697665', '2020-06-29 07:24:22', '2020-07-29 10:41:24'),
+	(X'525F564F4441434F4D5F4745545F4D554C5449504C45', X'7472616E73616374696F6E73', X'766F6461636F6D', X'74686973206973206120726F6C6520564945572D55534552', X'616374697665', '2020-06-29 07:24:22', '2020-07-29 10:41:27'),
+	(X'525F5A414E54454C5F4745545F4D554C5449504C45', X'7472616E73616374696F6E73', X'7A616E74656C', X'74686973206973206120726F6C652044454C4554452D55534552', X'616374697665', '2020-06-29 07:24:22', '2020-07-29 10:41:30'),
+	(X'525F47454E5F494E434F4D494E475F524551554553545F303031', X'7472616E73616374696F6E73', X'46455443482D494E434F4D494E472D5452414E53414354494F4E53', X'74686973206973206120726F6C65205550444154452D55534552', X'616374697665', '2020-06-29 07:24:22', '2020-07-29 10:41:33'),
+	(X'524F4C455F303031', X'726F6C6573', X'72656164', X'74686973206973206120726F6C65204352454154452D55534552', X'616374697665', '2020-06-29 07:19:41', '2020-07-29 10:41:36'),
+	(X'524F4C455F303032', X'726F6C6573', X'7772697465', X'74686973206973206120726F6C6520564945572D55534552', X'616374697665', '2020-06-29 07:19:41', '2020-07-29 10:41:38'),
+	(X'524F4C455F303033', X'726F6C6573', X'64656C657465', X'74686973206973206120726F6C652044454C4554452D55534552', X'616374697665', '2020-06-29 07:19:41', '2020-07-29 10:41:41'),
+	(X'524F4C455F303034', X'726F6C6573', X'757064617465', X'74686973206973206120726F6C65205550444154452D55534552', X'616374697665', '2020-06-29 07:19:41', '2020-07-29 10:41:44'),
+	(X'525F53544154495354494353', X'7472616E73616374696F6E73', X'7374617473', X'7468697320697320616E206163636573732072696768747320746F20646973706C6179207468652073746174697374696373', X'616374697665', '2020-06-29 07:24:22', '2020-07-02 10:21:57');
+
+INSERT INTO `role_access_rights_mapping` (`role_id`, `access_right_id`, `status`, `created_at`, `updated_at`)
+VALUES
+( 1, 1, 'active', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+( 1, 2, 'active', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+( 1, 3, 'active', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+( 1, 4, 'active', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+( 1, 5, 'active', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+( 1, 6, 'active', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+( 1, 7, 'active', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+( 1, 8, 'active', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+( 1, 9, 'active', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+( 1, 10, 'active', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+( 1, 11, 'active', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+( 1, 12, 'active', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+( 1, 13, 'active', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+( 1, 14, 'active', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+( 1, 15, 'active', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO `user_roles` (`user_id`,`role_id`, `status`, `created_at`, `updated_at`)
+VALUES
+( 1, 1, 'active', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+( 2, 1, 'active', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO `users` ( `name`, `email`, `password`, `address`, `mobile_number`, `payment_vendor_id`, `type`, `country_code`, `remarks`, `status`, `created_at`, `updated_at`)
+VALUES
+-- Daniel Pirestani password: 'Spank0!'
+('Daniel Pirestani', 'daniel@pirestani.com', '$2b$10$JDxxwX/zqhF8KyDWEvgUWOIYWf8cB6D6IDd1yQvWHQoqRyDYiyTHm', X'74686973206973206120737570657261646D696E', X'37373630323235343035', NULL, NULL, 'TZS', NULL, 'active', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO `user_roles` (`user_id`,`role_id`, `status`, `created_at`, `updated_at`)
+VALUES
+( 23, 1, 'active', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO `api_configurations` (`path`, `request_type`, `request`, `request_options`, `response`, `error_response`, `success_response`, `response_options`, `skip_validation`, `type`, `status`, `created_at`, `updated_at`)
+VALUES
+	( X'2F7469676F2F757373642F717565727973756273637269626572', X'737472696E67', '`<?xml version=\"1.0\" encoding=\"UTF-8\"?> <COMMAND> <TYPE>string</TYPE> <TXNID>string</TXNID> <MSISDN>string</MSISDN> <AMOUNT>string</AMOUNT> <COMPANYNAME>string</COMPANYNAME> <CUSTOMERREFERENCEID>string</CUSTOMERREFERENCEID> </COMMAND>`', '{ }', NULL, '`<?xml version=\"1.0\"?> <COMMAND> <TYPE>SYNC_LOOKUP_RESPONSE</TYPE> <TXNID>${options.txnID}</TXNID> <REFID>${options.refID}</REFID> <RESULT>${options.result}</RESULT> <ERRORCODE>${options.errorCode}</ERRORCODE> <ERRORDESC>Not registered</ERRORDESC> <MSISDN>${options.msisdn}</MSISDN> <FLAG>${options.flag}</FLAG> <CONTENT>${options.content}</CONTENT> </COMMAND>`', '`<?xml version=\"1.0\"?> <COMMAND> <TYPE>SYNC_LOOKUP_RESPONSE</TYPE> <TXNID>${options.txnID}</TXNID> <REFID>${options.refID}</REFID> <RESULT>${options.result}</RESULT> <ERRORCODE>${options.errorCode}</ERRORCODE> <ERRORDESC>Successful transaction</ERRORDESC> <MSISDN>${options.msisdn}</MSISDN> <FLAG>${options.flag}</FLAG> <CONTENT>${options.content}</CONTENT> </COMMAND>`', NULL, 0, X'696E636F6D696E67', X'616374697665', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+	( X'2F617A616D2F7469676F2F757373642F717565727973756273637269626572', X'737472696E67', '`<?xml version=\"1.0\" encoding=\"UTF-8\"?> <COMMAND> <TYPE>string</TYPE> <TXNID>string</TXNID> <MSISDN>string</MSISDN> <AMOUNT>string</AMOUNT> <COMPANYNAME>string</COMPANYNAME> <CUSTOMERREFERENCEID>string</CUSTOMERREFERENCEID> </COMMAND>`', '{ }', NULL, '`<?xml version=\"1.0\"?> <COMMAND> <TYPE>SYNC_LOOKUP_RESPONSE</TYPE> <TXNID>${options.txnID}</TXNID> <REFID>${options.refID}</REFID> <RESULT>${options.result}</RESULT> <ERRORCODE>${options.errorCode}</ERRORCODE> <ERRORDESC>Not registered</ERRORDESC> <MSISDN>${options.msisdn}</MSISDN> <FLAG>${options.flag}</FLAG> <CONTENT>${options.content}</CONTENT> </COMMAND>`', '`<?xml version=\"1.0\"?> <COMMAND> <TYPE>SYNC_LOOKUP_RESPONSE</TYPE> <TXNID>${options.txnID}</TXNID> <REFID>${options.refID}</REFID> <RESULT>${options.result}</RESULT> <ERRORCODE>${options.errorCode}</ERRORCODE> <ERRORDESC>Successful transaction</ERRORDESC> <MSISDN>${options.msisdn}</MSISDN> <FLAG>${options.flag}</FLAG> <CONTENT>${options.content}</CONTENT> </COMMAND>`', NULL, 0, X'696E636F6D696E67', X'616374697665', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+	( X'2F7469676F2F757373642F7175657279537562736372696265722F6E6F726D616C433242', X'737472696E67', '`<?xml version=\"1.0\" encoding=\"UTF-8\"?> <COMMAND> <TYPE>string</TYPE> <TXNID>string</TXNID> <MSISDN>string</MSISDN> <AMOUNT>string</AMOUNT> <COMPANYNAME>string</COMPANYNAME> <CUSTOMERREFERENCEID>string</CUSTOMERREFERENCEID> </COMMAND>`', '{ }', NULL, '`<?xml version=\"1.0\"?> <COMMAND> <TYPE>SYNC_LOOKUP_RESPONSE</TYPE> <REFID>${options.refID}</REFID> <RESULT>${options.result}</RESULT> <ERRORCODE>${options.errorCode}</ERRORCODE> <ERRORDESC>Not registered</ERRORDESC> <MSISDN>${options.msisdn}</MSISDN> <FLAG>${options.flag}</FLAG> <CONTENT>${options.content}</CONTENT> </COMMAND>`', '`<?xml version=\"1.0\"?> <COMMAND> <TYPE>SYNC_LOOKUP_RESPONSE</TYPE> <REFID>${options.refID}</REFID> <RESULT>${options.result}</RESULT> <ERRORCODE>${options.errorCode}</ERRORCODE> <ERRORDESC>Successful transaction</ERRORDESC> <MSISDN>${options.msisdn}</MSISDN> <FLAG>${options.flag}</FLAG> <CONTENT>${options.content}</CONTENT> </COMMAND>`', NULL, 0, X'696E636F6D696E67', X'616374697665', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+	( X'2F617A616D2F7469676F2F757373642F7175657279537562736372696265722F6E6F726D616C433242', X'737472696E67', '`<?xml version=\"1.0\" encoding=\"UTF-8\"?> <COMMAND> <TYPE>string</TYPE> <TXNID>string</TXNID> <MSISDN>string</MSISDN> <AMOUNT>string</AMOUNT> <COMPANYNAME>string</COMPANYNAME> <CUSTOMERREFERENCEID>string</CUSTOMERREFERENCEID> </COMMAND>`', '{ }', NULL, '`<?xml version=\"1.0\"?> <COMMAND> <TYPE>SYNC_LOOKUP_RESPONSE</TYPE> <REFID>${options.refID}</REFID> <RESULT>${options.result}</RESULT> <ERRORCODE>${options.errorCode}</ERRORCODE> <ERRORDESC>Not registered</ERRORDESC> <MSISDN>${options.msisdn}</MSISDN> <FLAG>${options.flag}</FLAG> <CONTENT>${options.content}</CONTENT> </COMMAND>`', '`<?xml version=\"1.0\"?> <COMMAND> <TYPE>SYNC_LOOKUP_RESPONSE</TYPE> <REFID>${options.refID}</REFID> <RESULT>${options.result}</RESULT> <ERRORCODE>${options.errorCode}</ERRORCODE> <ERRORDESC>Successful transaction</ERRORDESC> <MSISDN>${options.msisdn}</MSISDN> <FLAG>${options.flag}</FLAG> <CONTENT>${options.content}</CONTENT> </COMMAND>`', NULL, 0, X'696E636F6D696E67', X'616374697665', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO `api_configurations` ( `path`, `request_type`, `request`, `request_options`, `error_response`, `success_response`, `response_options`, `skip_validation`, `type`, `status`, `created_at`, `updated_at`)
+VALUES
+	( X'2F617A616D2F7469676F2F757373642F6E6F726D616C433242', X'737472696E67', '`<?xml version=\"1.0\" encoding=\"UTF-8\"?> <COMMAND> <TYPE>string</TYPE> <TXNID>string</TXNID> <MSISDN>string</MSISDN> <AMOUNT>string</AMOUNT> <COMPANYNAME>string</COMPANYNAME> <CUSTOMERREFERENCEID>string</CUSTOMERREFERENCEID> </COMMAND>`', NULL, '`<?xml version=\"1.0\"?> <COMMAND> <TYPE>SYNC_BILLPAY_RESPONSE</TYPE> <TXNID>${options.txnID}</TXNID> <REFID>${options.refID}</REFID> <RESULT>${options.result}</RESULT> <ERRORCODE>${options.errorCode}</ERRORCODE> <ERRORDESC /> <MSISDN>${options.msisdn}</MSISDN> <FLAG>${options.flag}</FLAG> <CONTENT>${options.content}</CONTENT> </COMMAND>`', '`<?xml version=\"1.0\"?> <COMMAND> <TYPE>SYNC_BILLPAY_RESPONSE</TYPE> <TXNID>${options.txnID}</TXNID> <REFID>${options.refID}</REFID> <RESULT>${options.result}</RESULT> <ERRORCODE>${options.errorCode}</ERRORCODE> <ERRORDESC /> <MSISDN>${options.msisdn}</MSISDN> <FLAG>${options.flag}</FLAG> <CONTENT>${options.content}</CONTENT> </COMMAND>`', NULL, 0, X'696E636F6D696E67', X'616374697665', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+
+INSERT INTO `payment_partner` ( `partner_code`, `code_scheme`, `name`, `description`, `auth_scheme`, `secret_code`, `collection_account_number`, `username`, `password`, `collection_account_password`, `service_type`, `payment_vendor_id`, `payment_intimation_route`, `payment_acknowledgment_route`, `payment_initiation_route`, `external_endpoint_specs`, `allowed_country_code`, `status`, `created_at`, `updated_at`)
+VALUES
+	( 'TigoAzamTransaction', 'MD%', 'AZM', 'TigoTransaction', 'MD5', 'MD5', '144444', NULL, NULL, 'AZAM_MAX_DTH', X'74657374726564', 6, 'http://mq.azammedia.com/mqsapiws/Service.asmx', 'http://mq.azammedia.com/mqsapiws/Service.asmx', 'http://mq.azammedia.com/mqsapiws/Service.asmx', NULL, 'TZS', 'active', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
